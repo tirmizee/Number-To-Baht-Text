@@ -32,3 +32,34 @@
         boolean isZero = integer.compareTo(BigInteger.ZERO) == 0; 
         return isZero ? FULLY_TH : toText(integer).concat(SATANG_TH);
     }
+    
+#### Demo
+
+    public static void main(String[] args) {
+        System.out.println(numberToText(new BigDecimal(0.21)));
+        System.out.println(numberToText(new BigDecimal(0)));
+        System.out.println(numberToText(new BigDecimal(1.0)));
+        System.out.println(numberToText(new BigDecimal(11.67)));
+        System.out.println(numberToText(new BigDecimal(11)));
+        System.out.println(numberToText(new BigDecimal(201.99)));
+        System.out.println(numberToText(new BigDecimal(11_311)));
+        System.out.println(numberToText(new BigDecimal(200_000)));
+        System.out.println(numberToText(new BigDecimal(8_999_902.88)));
+        System.out.println(numberToText(new BigDecimal(123_456_789.10)));
+        System.out.println(numberToText(new BigDecimal(90_999_123_456_789.20)));
+        System.out.println(numberToText(new BigDecimal(300_987_654_321_123_456_541.20)));
+    }
+    
+    ศูนย์บาทยี่สิบเอ็ดสตางค์
+    ศูนย์บาทถ้วน
+    หนึ่งบาทถ้วน
+    สิบเอ็ดบาทหกสิบเจ็ดสตางค์
+    สิบเอ็ดบาทถ้วน
+    สองร้อยหนึ่งบาทเก้าสิบเก้าสตางค์
+    หนึ่งหมื่นหนึ่งพันสามร้อยสิบเอ็ดบาทถ้วน
+    สองแสนบาทถ้วน
+    แปดล้านเก้าแสนเก้าหมื่นเก้าพันเก้าร้อยสองบาทแปดสิบแปดสตางค์
+    หนึ่งร้อยยี่สิบสามล้านสี่แสนห้าหมื่นหกพันเจ็ดร้อยแปดสิบเก้าบาทสิบสตางค์
+    เก้าสิบล้านล้านเก้าแสนเก้าหมื่นเก้าพันหนึ่งร้อยยี่สิบสามล้านสี่แสนห้าหมื่นหกพันเจ็ดร้อยแปดสิบเก้าบาทยี่สิบสตางค์
+    สามร้อยล้านล้านล้านเก้าแสนแปดหมื่นเจ็ดพันหกร้อยห้าสิบสี่ล้านล้านสามแสนสองหมื่นหนึ่งพันหนึ่งร้อยยี่สิบสามล้านสี่แสนสองหมื่นหกพันสามร้อยสี่บาทถ้วน
+
