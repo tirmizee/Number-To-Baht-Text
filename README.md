@@ -8,7 +8,7 @@
   <img src="https://user-images.githubusercontent.com/15135199/97611483-d47f1d80-1a48-11eb-9c82-0719b39f002e.png" width="650">
 </p>
 
-#### NumberToText function
+#### NumberToText function (Main)
 
     public static String numberToText(BigDecimal bigDecimal) {
 
@@ -24,4 +24,11 @@
         String decimalText = decimalToText(decimal);
 
         return integerText + decimalText;
+    }
+
+#### DecimalToText function (Main)
+
+    public static String decimalToText(BigInteger integer) {
+        boolean isZero = integer.compareTo(BigInteger.ZERO) == 0; 
+        return isZero ? FULLY_TH : toText(integer).concat(SATANG_TH);
     }
