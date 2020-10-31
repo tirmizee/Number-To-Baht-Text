@@ -26,6 +26,8 @@
         return integerText + decimalText;
     }
 
+#### IntegerToText function
+
 #### DecimalToText function
 
     public static String decimalToText(BigInteger integer) {
