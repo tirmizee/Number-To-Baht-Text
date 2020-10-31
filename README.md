@@ -26,7 +26,7 @@
         return integerText + decimalText;
     }
 
-#### DecimalToText function (Main)
+#### DecimalToText function
 
     public static String decimalToText(BigInteger integer) {
         boolean isZero = integer.compareTo(BigInteger.ZERO) == 0; 
